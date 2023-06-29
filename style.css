@@ -1,0 +1,16 @@
+h1, h2 {
+    color: #264653;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container h2 {
+    text-align: center;
+}
