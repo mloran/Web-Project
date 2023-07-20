@@ -1,11 +1,11 @@
 
-// Just a Test Code
+// // Just a Test Code
 
-let cats = ["blue", "kity"];
+// let cats = ["blue", "kity"];
 
-let dogs = ["rusty", "wyatt"];
+// let dogs = ["rusty", "wyatt"];
 
-let combo = cats.concat(dogs);
+// let combo = cats.concat(dogs);
 
 
-let test_alert = prompt("Wie geht es dir heute so?")
+// let test_alert = prompt("Wie geht es dir heute so?")

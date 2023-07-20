@@ -1,20 +1,86 @@
 body {
-    background-color: #f7ede2;
+	border: none;
+	margin: 0;
+	padding: 0;
+    background-color: #D03939;
 }
 
-h1, h2 {
-    color: #264653;
-    text-align: center;
-}
-
-.container {
+#nav {
+    background-color: #D03939;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
+    height: 189px;
+
 }
 
-.container h2 {
+#UEFA {
+    margin-top: 10px;
+    width: 117px;
+    height: 117px;
+    margin-left: 10px;
+}
+
+#EUROS {
+    margin-top: 10px;
+    width: 221px;
+    height: 107px;
+    margin-right: 10px;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.phrase {
+    width: auto;
+    font-family: 'Judson', serif;
+    font-size: 90px;
+    align-self: flex-start;
+    margin-left: 50px; 
+    color: #FFFFFF;
+
+}
+.phrase p {
+    gap: 10px;
+}
+
+.last1 {
+    color: #9DF096;
+}
+.last2 {
+    color: #65DCC8;
+}
+.last3 {
+    color: #A6DAFF;
+}
+#expl {
+    width: 272px;
+    height: 93px;
+    font-size: 32px;
+    color: #29335C;
+    background-color: #FFFFFF;
+    margin-left: 120px;
+    border: none;
+    font-family: 'Judson', serif;
+}
+#stadium {
+    float: right;
+}
+#stadium img{
+    width: 568px;
+    height: 372px;
+    margin-right: 80px;
+}
+.dateFooter {
+    height: 115px;
+    background-color: #29335C;
+    display: flex;
+    justify-content: center;
+
+}
+.dateFooter p {
+    margin-top: 20px;
     text-align: center;
+    color: #FFFFFF;
+    font-size: 45px;
+    font-family: 'Judson',serif;
 }
