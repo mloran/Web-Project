@@ -1,83 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Judson&family=Open+Sans&family=Raleway:wght@800&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title></title>
-</head>
-<body>
-    <div id="nav">
-        <img id="UEFA" src="pictures/UEFA_Logo.png" alt="The official UEFA Logo">
-        <img id="EUROS" src="pictures/Euro_logo.png" alt="The official Euros 2024 Logo">
-    </div>
-    <div class="main">
-        <div class="phrase"> 
-                <b>Nations <span class="last1">united,</span></b><br>
-                <b>dreams <span class="last2">ignited,</span></b><br>
-                <b>victory in <span class="last3">sight</span></b><br>
-                <button id="expl">Explore more</button>
-        </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Judson&family=Open+Sans&family=Raleway:wght@800&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body style="font-family: 'Judson', serif">
+    <nav class="bg-red-700">
+      <div class="mx-auto max-w-7xl px-8 py-10">
+        <div class="flex justify-between items-center">
+          <img
+            width="65px lg:80px"
+            src="pictures/UEFA_Logo.png"
+            alt="The official UEFA Logo"
+          />
+          <img
+            width="95px lg:150px"
+            src="pictures/Euro_logo.png"
+            alt="The official Euros 2024 Logo"
+          />
         </div>
-        <div id="stadium">
-            <button id="prev-btn" class="arrow-btn">&lt;</button>
-            <img id="slides"src="https://img.fcbayern.com/image/upload/v1633517110/cms/public/images/allianz-arena/europameisterschaft/UEFA-EURO2024-KV_UEFA.png" alt="picture of a stadium">
-            <button id="next-btn" class="arrow-btn">&gt;</button>
+      </div>
+    </nav>
+    <div class="bg-red-700">
+      <div class="mx-auto max-w-7xl px-8 py-10">
+        <div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-8">
+          <div class="self-center">
+            <h1 class="text-5xl lg:text-7xl text-white">
+              Nations <span class="text-yellow-300">united</span>,
+            </h1>
+            <h1 class="text-5xl lg:text-7xl text-white">
+              dreams <span class="text-green-300">ignited</span>,
+            </h1>
+            <h1 class="text-5xl lg:text-7xl text-white">
+              victory in <span class="text-cyan-300">sight</span>
+            </h1>
+          </div>
+          <div>
+            <img
+              id="slides"
+              class="object-cover w-full h-64 lg:h-96 lg:w-auto"
+              src="https://img.fcbayern.com/image/upload/v1633517110/cms/public/images/allianz-arena/europameisterschaft/UEFA-EURO2024-KV_UEFA.png"
+              alt="picture of a stadium"
+            />
+            <div class="mt-5 flex flex-row gap-2">
+              <button
+                id="prev-btn"
+                class="flex items-center justify-center bg-red-400 w-10 h-10 rounded-full text-2xl"
+              >
+                <img src="pictures/Frame 9.svg" width="20px" />
+              </button>
+              <button
+                id="next-btn"
+                class="flex items-center justify-center bg-red-400 w-10 h-10 rounded-full text-2xl"
+              >
+                <img src="pictures/Frame 10.svg" width="20px" />
+              </button>
+            </div>
+          </div>
         </div>
-
+      </div>
     </div>
-    <div class="dateFooter">
-        <p><b>June - July 2024</b></p>
+    <div class="py-10 bg-blue-950">
+      <h2 class="text-3xl text-white animated">June - July 2024</h2>
     </div>
-    <section id="section2">
-        <h2>Participants</h2>
-        <div class="countries">
-            <div class="country-item">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png" alt="Flag of Germany">
-                <b>Germany</b>
-            </div>
-            <div class="country-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Flag_of_France_%282020–present%29.svg/1200px-Flag_of_France_%282020–present%29.svg.png" alt="Flag of France">
-                <b>France</b>
-            </div>
-            <div class="country-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_España.svg/1200px-Bandera_de_España.svg.png" alt="Flag of Spain">
-                <b>Spain</b>
-            </div>
-            <div class="country-item">
-                <img src="https://www.flaggenmeer.de/media/weedesign_images2webp/2000/flagge-portugal-querformat.webp" alt="Flag of Portugal">
-                <b>Portugal</b>
-            </div>
-            <div class="country-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/800px-Flag_of_the_Netherlands.svg.png" alt="Flag of Netherland">
-                <b>Netherland</b>
-            </div>
-            <div class="country-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1182px-Flag_of_Belgium.svg.png" alt="Flag of Belgium">
-                <b>Belgium</b>
-            </div>
-            <div class="country-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/2560px-Flag_of_Italy.svg.png" alt="Flag of Italy">
-                <b>Italy</b>
-            </div>
-            <div class="country-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/2560px-Flag_of_Norway.svg.png" alt="Flag of Norway">
-                <b>Norway</b>
-            </div>
+    <div id="participants" class="mx-auto max-w-7xl px-8 py-10">
+      <h2 class="text-3xl lg:text-5xl mb-5 lg:mb-10">Participants</h2>
+      <div class="grid grid-rows-1 gap-8 lg:grid-cols-4 lg:gap-8">
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png"
+            alt="Flag of Germany"
+            class="w-full lg:h-40"
+          />
+          <p class="text-2xl mt-3">Germany</p>
         </div>
-    </section>
-    
-    <section id="section3">
-        <h2>News</h2>
-            <div id="news-container">
-                <div class="news"></div>
-                <div class="news"></div>
-                <div class="news"></div>
-            </div>
-    </section>
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Flag_of_France_%282020–present%29.svg/1200px-Flag_of_France_%282020–present%29.svg.png"
+            alt="Flag of France"
+            class="w-full lg:h-40"
+          />
+          <p class="text-2xl mt-3">France</p>
+        </div>
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_España.svg/1200px-Bandera_de_España.svg.png"
+            alt="Flag of Spain"
+            class="w-full lg:h-40"
+          />
+          <p class="text-2xl mt-3">Spain</p>
+        </div>
+        <div>
+          <img
+            src="https://www.flaggenmeer.de/media/weedesign_images2webp/2000/flagge-portugal-querformat.webp"
+            alt="Flag of Portugal"
+            class="w-full lg:h-40"
+          />
+          <p class="text-2xl mt-3">Portugal</p>
+        </div>
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/800px-Flag_of_the_Netherlands.svg.png"
+            alt="Flag of Netherlands"
+            class="w-full lg:h-40"
+          />
+          <p class="text-2xl mt-3">Netherlands</p>
+        </div>
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1182px-Flag_of_Belgium.svg.png"
+            alt="Flag of Belgium"
+            class="w-full lg:h-40"
+          />
+          <p class="text-2xl mt-3">Belgium</p>
+        </div>
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/2560px-Flag_of_Italy.svg.png"
+            alt="Flag of Italy"
+            class="w-full lg:h-40"
+          />
+          <p class="text-2xl mt-3">Italy</p>
+        </div>
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/2560px-Flag_of_Norway.svg.png"
+            alt="Flag of Norway"
+            class="w-full lg:h-40"
+          />
+          <p class="text-2xl mt-3">Norway</p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="news"
+      class="bg-[url('https://img.fcbayern.com/image/upload/cms/public/images/allianz-arena/wallpaper/wallpaper-01.jpg')]"
+    >
+      <div class="mx-auto max-w-7xl px-8 py-10">
+        <h2 class="text-white text-3xl mb-8 lg:text-5xl lg:mb-10">News</h2>
+        <div class="grid grid-rows-1 gap-8 lg:grid-cols-3 lg:gap-8">
+          <div class="bg-emerald-700 p-10">
+            <p class="text-white text-3xl mb-28">Article</p>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore
+            </p>
+          </div>
+          <div class="bg-emerald-700 p-10">
+            <p class="text-white text-3xl mb-28">Article</p>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore
+            </p>
+          </div>
+          <div class="bg-emerald-700 p-10">
+            <p class="text-white text-3xl mb-28">Article</p>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="needtoknow" class="mx-auto max-w-7xl px-8 py-10">
+      <h2 class="text-3xl lg:text-5xl mb-5 lg:mb-10">Need to know</h2>
+      <div class="grid grid-rows-1 gap-8 lg:grid-cols-4 lg:gap-8">
+        <div class="bg-emerald-700 p-10">
+          <p class="text-white text-3xl mb-28">Did you know?</p>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore
+          </p>
+        </div>
+        <div class="bg-emerald-700 p-10">
+          <p class="text-white text-3xl mb-28">What!?</p>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore
+          </p>
+        </div>
+        <div class="bg-emerald-700 p-10">
+          <p class="text-white text-3xl mb-28">Soccer 101</p>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore
+          </p>
+        </div>
+        <div class="bg-emerald-700 p-10">
+          <p class="text-white text-3xl mb-28">Info</p>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="highlights" class="bg-slate-200">
+      <div class="mx-auto max-w-7xl px-8 py-10">
+        <h2 class="text-3xl lg:text-5xl mb-5 lg:mb-10">Highlights</h2>
+        <div class="grid grid-rows-1 gap-8 lg:grid-cols-3 lg:gap-8">
+          <div class="bg-emerald-700 p-10">
+            <p class="text-white text-3xl mb-28">01</p>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore
+            </p>
+          </div>
+          <div class="bg-emerald-700 p-10">
+            <p class="text-white text-3xl mb-28">02</p>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore
+            </p>
+          </div>
+          <div class="bg-emerald-700 p-10">
+            <p class="text-white text-3xl mb-28">03</p>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore
+            </p>
+          </div>
+          <div class="bg-emerald-700 p-10">
+            <p class="text-white text-3xl mb-28">04</p>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore
+            </p>
+          </div>
+          <div class="bg-emerald-700 p-10">
+            <p class="text-white text-3xl mb-28">05</p>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore
+            </p>
+          </div>
+          <div class="bg-emerald-700 p-10">
+            <p class="text-white text-3xl mb-28">06</p>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore
+            </p>
+          </div>
+          <div class="bg-emerald-700 p-10">
+            <p class="text-white text-3xl mb-28">07</p>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore
+            </p>
+          </div>
+          <div class="bg-emerald-700 p-10">
+            <p class="text-white text-3xl mb-28">08</p>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore
+            </p>
+          </div>
+          <div class="bg-emerald-700 p-10">
+            <p class="text-white text-3xl mb-28">09</p>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[url('pictures/soccer-bg.jpg')]">
+      <div class="mx-auto max-w-7xl px-8 py-10">
+        <a href="#participants"
+          ><p class="text-white text-5xl mb-10 lg:text-8xl lg:mb-10">
+            Participants
+          </p></a
+        >
+        <a href="#news"
+          ><p class="text-white text-5xl mb-10 lg:text-8xl lg:mb-10">News</p></a
+        >
+        <a href="#needtoknow"
+          ><p class="text-white text-5xl mb-10 lg:text-8xl lg:mb-10">
+            Need to know
+          </p></a
+        >
+        <a href="#highlights"
+          ><p class="text-white text-5xl mb-10 lg:text-8xl lg:mb-10">
+            Highlights
+          </p>
+          <p class="text-white mt-40">UEFA All Rights Reserved.</p></a
+        >
+      </div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
