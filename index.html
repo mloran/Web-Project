@@ -72,26 +72,31 @@
     <div class="py-10 bg-blue-950">
       <h2 class="text-3xl text-white animated">June - July 2024</h2>
     </div>
-    <div id="participants" class="mx-auto max-w-7xl px-8 py-10">
+    <div id="participants" class="mx-auto max-w-7xl px-8 py-10 bg-emerald-500" >
       <h2 class="text-3xl lg:text-5xl mb-5 lg:mb-10">Participants</h2>
       <div class="grid grid-rows-1 gap-8 lg:grid-cols-4 lg:gap-8">
         <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png"
-            alt="Flag of Germany"
-            class="w-full lg:h-40"
-          />
-          <p class="text-2xl mt-3">Germany</p>
+            <div class="flag-card" data-country="Germany">
+                <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png"
+                alt="Flagge von Deutschland"
+                class="w-full lg:h-40"
+              />
+              <p class="text-2xl mt-3">Deutschland</p>
+            </div>
+          </div>
+        <div>
+            <div class="flag-card" data-country="France">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Flag_of_France_%282020–present%29.svg/1200px-Flag_of_France_%282020–present%29.svg.png"
+                    alt="Flag of France"
+                    class="w-full lg:h-40"
+                />
+                <p class="text-2xl mt-3">France</p>
+            </div>
         </div>
         <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Flag_of_France_%282020–present%29.svg/1200px-Flag_of_France_%282020–present%29.svg.png"
-            alt="Flag of France"
-            class="w-full lg:h-40"
-          />
-          <p class="text-2xl mt-3">France</p>
-        </div>
-        <div>
+            <div class="flag-card" data-country="Spain">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_España.svg/1200px-Bandera_de_España.svg.png"
             alt="Flag of Spain"
@@ -99,7 +104,9 @@
           />
           <p class="text-2xl mt-3">Spain</p>
         </div>
+        </div>
         <div>
+            <div class="flag-card" data-country="Portugal">
           <img
             src="https://www.flaggenmeer.de/media/weedesign_images2webp/2000/flagge-portugal-querformat.webp"
             alt="Flag of Portugal"
@@ -107,7 +114,9 @@
           />
           <p class="text-2xl mt-3">Portugal</p>
         </div>
+        </div>
         <div>
+            <div class="flag-card" data-country="Netherland">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/800px-Flag_of_the_Netherlands.svg.png"
             alt="Flag of Netherlands"
@@ -115,7 +124,9 @@
           />
           <p class="text-2xl mt-3">Netherlands</p>
         </div>
+        </div>
         <div>
+            <div class="flag-card" data-country="Belgium">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1182px-Flag_of_Belgium.svg.png"
             alt="Flag of Belgium"
@@ -123,7 +134,9 @@
           />
           <p class="text-2xl mt-3">Belgium</p>
         </div>
+        </div>
         <div>
+            <div class="flag-card" data-country="Italy">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/2560px-Flag_of_Italy.svg.png"
             alt="Flag of Italy"
@@ -131,7 +144,9 @@
           />
           <p class="text-2xl mt-3">Italy</p>
         </div>
+        </div>
         <div>
+            <div class="flag-card" data-country="Norway">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/2560px-Flag_of_Norway.svg.png"
             alt="Flag of Norway"
@@ -139,7 +154,10 @@
           />
           <p class="text-2xl mt-3">Norway</p>
         </div>
+        </div>
       </div>
+    </div>
+    <div id="infoWindow" class="hidden bg-gray-800 text-white p-2 rounded-md absolute">
     </div>
     <div
       id="news"
@@ -172,7 +190,7 @@
         </div>
       </div>
     </div>
-    <div id="needtoknow" class="mx-auto max-w-7xl px-8 py-10">
+    <div id="needtoknow" class="mx-auto max-w-7xl px-8 py-10" class="needtoknow-section">
       <h2 class="text-3xl lg:text-5xl mb-5 lg:mb-10">Need to know</h2>
       <div class="grid grid-rows-1 gap-8 lg:grid-cols-4 lg:gap-8">
         <div class="bg-emerald-700 p-10">

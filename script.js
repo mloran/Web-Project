@@ -1,3 +1,4 @@
+// Slider
 const slides = document.querySelector("#slides");
 const prevBtn = document.querySelector("#prev-btn");
 const nextBtn = document.querySelector("#next-btn");
@@ -31,3 +32,44 @@ nextBtn.addEventListener("click", function () {
     slides.classList.remove("fade-out");
   }, 500);
 });
+
+// Tooltip-Miniwindowww
+const flagElements = document.querySelectorAll('.flag-card');
+
+flagElements.forEach(flag => {
+  flag.addEventListener('mouseover', showInfoWindow);
+  flag.addEventListener('mouseout', hideInfoWindow);
+});
+
+function showInfoWindow(event) {
+  const countryName = event.target.querySelector('p').textContent;
+  const countryInfo = getCountryInfo(countryName);
+
+  const infoWindow = document.getElementById('infoWindow');
+  infoWindow.textContent = countryInfo;
+
+  const mouseX = event.clientX;
+  const mouseY = event.clientY;
+  const offsetX = 10;
+  const offsetY = -20;
+
+  infoWindow.style.left = `${mouseX + offsetX}px`;
+  infoWindow.style.top = `${mouseY + offsetY}px`;
+  infoWindow.classList.remove('hidden');
+}
+
+function hideInfoWindow() {
+  const infoWindow = document.getElementById('infoWindow');
+  infoWindow.classList.add('hidden');
+}
+
+function getCountryInfo(country) {
+  switch (country) {
+    case 'Germany':
+      return 'Germany is a country in Central Europe known for its rich history...';
+    case 'France':
+      return 'France has a rich soccer tradition, is a two-time world champion and has won two European titles. The French national team has produced many outstanding players and is known for its offensive style of play.';
+    default:
+      return 'No information available.';
+  }
+}
