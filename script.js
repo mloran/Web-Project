@@ -79,21 +79,21 @@ function getCountryName(element) {
 function getCountryInfo(country) {
   switch (country) {
     case "Germany":
-      return "Germany is a country in Central Europe known for its rich history...";
+      return "Germany is one of the most successful soccer countries with four World Cup titles and three European Championship titles. The German national team has a proud history and is known for its tactical strength and efficiency in the game.";
     case "France":
       return "France has a rich soccer tradition, is a two-time world champion and has won two European titles. The French national team has produced many outstanding players and is known for its offensive style of play.";
     case "Spain":
-      return "Spain has a rich soccer tradition, is a two-time world champion and has won two European titles. The French national team has produced many outstanding players and is known for its offensive style of play.";
+      return "Spain is one of the most successful soccer nations, winning the 2010 World Cup and becoming European champions twice. The Spanish national team has a unique possession and short passing style of play known as Tiki-Taka.";
     case "Portugal":
-      return "Portugal is known for its passionate soccer fans and has produced top-quality players like Cristiano Ronaldo.";
+      return "Portugal surprisingly won the European Championship in 2016 and has one of the best footballers in history in Cristiano Ronaldo. The Portuguese national team is known for its fighting attitude and ability to shine in decisive moments.";
     case "Netherlands":
-      return "The Netherlands has a storied soccer history and is known for its Total Football style of play.";
+      return "The Netherlands have an impressive history at World Cups, but have been unsuccessful in the final three times so far. Nevertheless, they won the European Championship in 1988 and won their only international title.";
     case "Belgium":
-      return "Belgium has a talented national team and is known for its strong youth development programs.";
+      return "Belgium has also done well in World Championships in the past, especially in 1986 when they finished third. Although they have not won a European Championship yet, they reached the final in 1980.";
     case "Italy":
-      return "Italy is a soccer powerhouse, having won multiple World Cup and European Championship titles.";
+      return "Italy is one of the most successful soccer nations with four World Cup titles and two European Championship titles. The Italian national team is famous for its tactical discipline and defensive strength.";
     case "Norway":
-      return "Norway has a promising young generation of soccer players and is known for its enthusiasm for the sport.";
+      return "Norway has never qualified for a World Cup, but reached the final of the 2000 European Championship. The Norwegian national team has a promising talent pool and regularly develops young players for international soccer.";
     default:
       return "No information available.";
   }
